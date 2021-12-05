@@ -15,5 +15,5 @@ elif("ch==4"):
     if(num2==0):
         print("Division not valid")
 else:
-    div=num1/num2
+    div=num1//num2
     print("Division =",div)
