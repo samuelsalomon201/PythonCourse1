@@ -1,5 +1,5 @@
 def welcome():
-    '''This Function Creates A Weolcome Page For Our Gaming App'''
+    '''This Function Creates A Welcome Page For Our Gaming App'''
     for i in range(0, 20):
         print("*\t", end="")
     print()
@@ -31,9 +31,6 @@ def welcome():
     print()
     input("Press any key to start:")
 
-welcome()
-print("\n"*100)
-
 def mainmenu():
     print("1.Rock Paper Scissors\n2.Cows And Bulls\n3.Exit")
     ch=int(input("Enter your choice number"))
@@ -42,8 +39,6 @@ def mainmenu():
     elif ch==2:
         cowsandbullsmenu()
     elif ch==3:
-        exit()
-    elif:
         print("ERROR EEROR\nOOOOOOOF")
         exit()
 
@@ -56,6 +51,18 @@ def rockpaperscissormenu():
         rockpaperscissorsrules()
     elif ch == 3:
         mainmenu()
-    elif:
-        print("ERROR EEROR\nOOOOOOOF")
-        exit()
+
+
+def cowsandbulls():
+    print("1.Play\n 2.Rules\n  3.Return to Main Menu")
+    ch = int(input("Enter your choice number"))
+    if ch == 1:
+        cowsandbulls()
+    elif ch == 2:
+        cowsandbullsrules()
+    elif ch == 3:
+        mainmenu()
+
+welcome()
+print("\n"*100)
+mainmenu()
