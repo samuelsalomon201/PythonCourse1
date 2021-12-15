@@ -62,6 +62,8 @@ def cowsandbulls():
         cowsandbullsrules()
     elif ch == 3:
         mainmenu()
+def rockpaperscissors():
+    print("Welcome to rock paper scissors")
 
 welcome()
 print("\n"*100)
